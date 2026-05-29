@@ -1,2 +1,2 @@
 # python-practice
-Beginner/Mid Level
+Beginner Level
