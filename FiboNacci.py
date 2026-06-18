@@ -84,6 +84,24 @@ def fibonacci_generator(n):
         a, b = b, a + b
         count += 1
 
+#Exercise
+Number =int(input("Please Enter a numebr:"))
+L =[]
+def fibonacci_Seq(n):
+    if n == 1 or n == 2:
+        return 1
+    
+    a, b = 1, 1
+    for _ in range(3, n + 1):
+        a, b = b, a + b
+        L.append(b)
+    for i in L:    
+     if Number ==i:
+        print(f"Number is in the Fibonacci Sequenc{Number}")
+     else:
+      print("Not Contains") 
+      break
+fibonacci_iterative(Number)
 
 # Test 
 
