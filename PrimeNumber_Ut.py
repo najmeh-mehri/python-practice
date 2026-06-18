@@ -27,7 +27,20 @@ def TwoDigit_Primes():
     
     PrimesList = [p for p in primes if 10 <= p <= 99]
     return PrimesList
+#Exercise
+Number = int(input("Please enter a number:"))
+def IsPrime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
 
+for i in range(2,Number):
+    if IsPrime(i):
+        print(i)
+    
 
 # Test
 if __name__ == "__main__":
