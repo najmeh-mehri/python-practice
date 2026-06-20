@@ -38,7 +38,17 @@ def CountChar(Text):
 
      for ch, count in counts.items():
             print(f"* {ch} : {count}")
-
+#Exercise
+Text = input("Please Enter your text:")
+Uper = 0
+Lower =0
+for i in Text:
+    if i.isupper():
+       Uper +=1
+    elif i.islower():
+        Lower+=1
+        
+print(f"Upper: {Uper} - Lower: {Lower}")
 
 if __name__ == "__main__":
     
