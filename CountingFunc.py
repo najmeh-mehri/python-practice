@@ -50,6 +50,12 @@ for i in Text:
         
 print(f"Upper: {Uper} - Lower: {Lower}")
 
+Text = input("Please Enter your text:")
+print(Text[::-1])
+
+def is_palindrome(Txt):
+    return str(Txt) == str(Txt)[::-1]
+print(is_palindrome(Text))
 if __name__ == "__main__":
     
     print("=" * 30)
