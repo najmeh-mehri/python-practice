@@ -54,8 +54,21 @@ Text = input("Please Enter your text:")
 print(Text[::-1])
 
 def is_palindrome(Txt):
-    return str(Txt) == str(Txt)[::-1]
+    return Txt == Txt[::-1]
 print(is_palindrome(Text))
+
+Text = input("Please Enter your text:")
+
+# پاک‌سازی رشته
+cleaned_text = Text.strip().lower()
+
+# حذف فاصله‌ها
+no_spaces = cleaned_text.replace(" ", "")
+
+print(f"Original: {Text}")
+print(f"Cleaned: {no_spaces}")
+
+
 if __name__ == "__main__":
     
     print("=" * 30)
