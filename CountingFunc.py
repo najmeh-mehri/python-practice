@@ -71,7 +71,6 @@ print(f"Cleaned: {no_spaces}")
 
 if __name__ == "__main__":
     
-    print("=" * 30)
     print("Testing CountDigit:")
     print(f"CountDigit(4, 4143131) = {CountDigit(4, 4143131)}")  # 2
     print(f"CountDigit(1, 1234561) = {CountDigit(1, 1234561)}")  # 2
