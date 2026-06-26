@@ -77,6 +77,10 @@ for ch in Text:
 for ch, count in counts.items():
        print(f"* {ch} : {count}")
             
+NameList =["Nazanin","Nivan","Nicholas","Iran"]
+ScoreList = [18,20,17,20]
+StDict = dict(zip(NameList, ScoreList))
+print(StDict)
 
 if __name__ == "__main__":
     
