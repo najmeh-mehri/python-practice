@@ -82,6 +82,22 @@ ScoreList = [18,20,17,20]
 StDict = dict(zip(NameList, ScoreList))
 print(StDict)
 
+Text = input("Please Enter your text:")
+counts = {}
+
+for ch in Text:
+    if ch != ',':
+        counts[ch] = counts.get(ch, 0) + 1
+
+# پیدا کردن بیشترین تکرار
+max_count = max(counts.values())
+
+# پیدا کردن همه کاراکترهایی که بیشترین تکرار را دارند
+most_frequent = [ch for ch, count in counts.items() if count == max_count]
+
+print(f"Most frequent character(s): {most_frequent}")
+print(f"Count: {max_count}")
+
 if __name__ == "__main__":
     
     print("Testing CountDigit:")
