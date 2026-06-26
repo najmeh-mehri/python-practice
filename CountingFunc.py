@@ -77,11 +77,6 @@ for ch in Text:
 for ch, count in counts.items():
        print(f"* {ch} : {count}")
             
-NameList =["Nazanin","Nivan","Nicholas","Iran"]
-ScoreList = [18,20,17,20]
-StDict = dict(zip(NameList, ScoreList))
-print(StDict)
-
 Text = input("Please Enter your text:")
 counts = {}
 
@@ -97,6 +92,12 @@ most_frequent = [ch for ch, count in counts.items() if count == max_count]
 
 print(f"Most frequent character(s): {most_frequent}")
 print(f"Count: {max_count}")
+
+NameList =["Nazanin","Nivan","Nicholas","Iran"]
+ScoreList = [18,20,17,20]
+StDict = dict(zip(NameList, ScoreList))
+print(StDict)
+
 
 if __name__ == "__main__":
     
