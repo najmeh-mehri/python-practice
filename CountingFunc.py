@@ -68,6 +68,15 @@ no_spaces = cleaned_text.replace(" ", "")
 print(f"Original: {Text}")
 print(f"Cleaned: {no_spaces}")
 
+Text = input("Please Enter your text:")
+counts = {}
+for ch in Text:
+       if ch != ',':
+              counts[ch] = counts.get(ch, 0) + 1
+
+for ch, count in counts.items():
+       print(f"* {ch} : {count}")
+            
 
 if __name__ == "__main__":
     
