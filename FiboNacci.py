@@ -83,28 +83,6 @@ def fibonacci_generator(n):
         yield a
         a, b = b, a + b
         count += 1
-
-#Exercise
-Number = int(input("Please Enter a number: "))
-
-def fibonacci_Sequence(n):
-    if n == 1 or n == 2:
-        return [1]
-    
-    a, b = 1, 1
-    L = [1, 1]
-    for _ in range(3, n + 1):
-        a, b = b, a + b
-        L.append(b)
-    return L
-
-fib_numbers = fibonacci_iterative(Number)
-
-if Number in fib_numbers:
-    print(f"✅ Number {Number} is in the Fibonacci Sequence")
-else:
-    print(f"❌ Number {Number} is NOT in the Fibonacci Sequence")
-
 # Test 
 
 if __name__ == "__main__":
