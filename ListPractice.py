@@ -216,37 +216,6 @@ def test_variable_args():
     print(f"Sum using sums(*L): {sums(*L)}")
     print(f"Sum using built-in sum(): {sum(L)}")
     print(f"Sum of (1,2,3): {sums(1, 2, 3)}")
-#Exercise
-
-TestList = []
-for i in range(1,21):
-    TestList.append(i)
-for j in TestList:
-    if j%2==0 :
-        print("The Number is Even")
-    else:
-        print("The Number is odd")
-for k in TestList:
-    if k%3==0:
-        TestList.remove(k)
-
-
-i =0
-L =[]
-while i<11:
-    Number = int(input("Please Enter a Number:"))
-    L.append(Number)
-    i+=1
-    repeated = {i: L.count(i) for i in L if L.count(i) > 1}
-    
-    if repeated:
-        print(f"List: {L}")
-        print("Duplicate elements:")
-        for key in sorted(repeated):
-            print(f"  {key} : {repeated[key]} times")
-    else:
-        print("No duplicates found")
-
 # Main Test
 
 if __name__ == "__main__":
