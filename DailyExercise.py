@@ -81,6 +81,37 @@ else:
     print(f"❌ Number {Number} is NOT in the Fibonacci Sequence")
 
 
+#Exercise
+
+TestList = []
+for i in range(1,21):
+    TestList.append(i)
+for j in TestList:
+    if j%2==0 :
+        print("The Number is Even")
+    else:
+        print("The Number is odd")
+for k in TestList:
+    if k%3==0:
+        TestList.remove(k)
+
+
+i =0
+L =[]
+while i<11:
+    Number = int(input("Please Enter a Number:"))
+    L.append(Number)
+    i+=1
+    repeated = {i: L.count(i) for i in L if L.count(i) > 1}
+    
+    if repeated:
+        print(f"List: {L}")
+        print("Duplicate elements:")
+        for key in sorted(repeated):
+            print(f"  {key} : {repeated[key]} times")
+    else:
+        print("No duplicates found")
+
 
 
 def SumAll(*arg):
